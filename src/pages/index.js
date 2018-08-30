@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const IndexPage = () => (
   <div>
     <h2>Welcome to Byte Lab.</h2>
-    <p><b>IMPORTANT ANNOUNCEMENT!</b> Our next meeting will be August 30th, Thursday.</p>
+    <p><b>IMPORTANT ANNOUNCEMENT!</b> Our next meeting will be September 6th, Thursday.</p>
     <p>Our site is under construction.</p>
     <p>In the meantime, since you're here: why not
         check out our <a href="https://www.instagram.com/bytelaboratory">
