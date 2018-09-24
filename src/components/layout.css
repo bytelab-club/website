@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://rsms.me/inter/inter-ui.css');
+body {
+  font-family: 'Inter UI';
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Inconsolata;
+}
+h1 {
+  color: #b71638;
+}
+h2 {
+  font-size: 2rem;
+}
+a {
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
