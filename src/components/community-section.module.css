@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  width: 45%;
+  border-radius: 0.8rem;
+  filter: drop-shadow(3px 3px 4px #000000aa);
+  display: inline-block;
+}
+.text {
+  font-family: 'Inter UI';
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  width: 45%;
+  display: inline-block;
+}
+.button {
+  margin: 4rem auto 0 auto;
+}
+.button ion-icon {
+  font-size: 1.6rem;
+}
+.button p {
+  font-size: 1.6rem;
+  display: inline;
+}

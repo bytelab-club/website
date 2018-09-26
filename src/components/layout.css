@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://rsms.me/inter/inter-ui.css');
 * {
   margin: 0
+}
+body {
+  font-family: 'Inter UI';
+  color: #2b2b2b;
 }
