@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://rsms.me/inter/inter-ui.css');
+.link{
+  color: #ededed;
+}
+.link:visited {
+  color: #ededed;
+}
+.frontContainer {
+  width: 60%;
+  height: 40rem;
+  position: absolute;
+  left: 0;
+  background-color: #082e49a7;
+  z-index: 1;
+}
+.titleText{
+  font-family: Inconsolata;
+  font-size: 8rem;
+  font-weight: lighter;
+  padding-left: 6vw;
+  padding-top: 1rem;
+  color: #b71638;
+  margin: 0;
+}
+.tagline {
+  margin-top: 2rem;
+  padding-left: 6vw;
+  font-weight: lighter;
+  font-family: Inter UI;
+  font-size: 2.2rem;
+  position: inline;
+  color: #ededed;
+  font-style: italic;
+  bottom: initial;
+}
+.subtext {
+  font-family: Inconsolata;
+  padding-left: 6vw;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 2.4rem;
+  color: #cccccc;
+  font-weight: lighter;
+}
+.container {
+  width: 40%;
+  background-color: #d4d4df;
+  height: 40rem;
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
