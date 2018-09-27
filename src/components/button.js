@@ -6,8 +6,7 @@ export default class Button extends React.Component {
       <a href={this.props.to} style={{
         width: "fit-content",
         textDecoration: "none",
-        color: "#d8dce6",
-        fontSize: "1.4rem",
+        color: "#f1f1f2",
         display: "block"
       }} className={this.props.className}>
         <div style={{
@@ -17,7 +16,6 @@ export default class Button extends React.Component {
           padding: "1.5rem",
           borderRadius: "0.8rem",
           lineHeight: "2rem",
-          filter: "drop-shadow(3px 3px 3px #00000077)"
         }}>
           {this.props.children}
         </div>

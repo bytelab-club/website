@@ -6,8 +6,6 @@
 }
 .image {
   width: 45%;
-  border-radius: 0.8rem;
-  filter: drop-shadow(3px 3px 4px #000000aa);
   display: inline-block;
 }
 .text {
@@ -21,9 +19,19 @@
   margin: 4rem auto 0 auto;
 }
 .button ion-icon {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .button p {
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   display: inline;
+}
+.featured {
+  height: 80vh;
+}
+.featured h3 {
+  font-family: Inconsolata;
+}
+.featured .flex {
+  flex-direction: column;
+  align-items: flex-start;
 }

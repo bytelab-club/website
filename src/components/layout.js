@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import {StaticQuery, graphql} from 'gatsby'
 import Helmet from 'react-helmet'
 
-import Navbar from '../components/navbar'
+import Footer from './footer'
+import Navbar from './navbar'
 import './layout.css'
 
 const Layout = ({ children, data, props }) => (
@@ -36,6 +37,7 @@ const Layout = ({ children, data, props }) => (
       }}
     >
       {children}
+      <Footer />
     </div>
   </div>
 )

@@ -22,7 +22,7 @@
   font-weight: lighter;
   padding-left: 6vw;
   padding-top: 1rem;
-  color: #b71638;
+  color: #db3360;
   margin: 0;
 }
 .tagline {
@@ -47,34 +47,38 @@
 }
 .container {
   width: 40%;
-  background-color: #d4d4df;
+  background-color: #2d2d40;
+  color: #dee5e7;
   box-sizing: border-box;
   padding: 2rem;
   height: 40rem;
   margin: 0;
   position: absolute;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   right: 0;
 }
 .infoHeader {
   font-family: Inconsolata, monospace;
   font-size: 2.6rem;
-  margin-bottom: 2rem;
   font-weight: lighter;
+}
+.infoHeader strong {
+  color: #db3360;
 }
 .infoParagraph {
   font-family: 'Inter UI', sans-serif;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
-  line-height: 1.8rem;
+  line-height: 2.4rem;
 }
 .infoLink {
   font-family: Inconsolata;
-  font-size: 2.2rem;
-  position: absolute;
-  bottom: 3rem;
-  color: black;
+  font-size: 2.5vw;
+  color: #373f8a;
+  width: fit-content;
 }
 .infoLink:visited {
-  color: black;
+  color: #7093d9;
 }

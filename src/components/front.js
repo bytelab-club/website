@@ -46,7 +46,7 @@ export default class Front extends React.Component {
         </div>
         <div className={styles.container}>
           <h3 className={styles.infoHeader}>
-            Lowell's all-inclusive coding club, <strong>every thursday in room 263 after school.</strong>
+            Lowell's all-inclusive coding club, <strong>every thursday in room 263.</strong>
           </h3>
           <p className={styles.infoParagraph}>
             We're a community of coders, creators, and designers who share a passion
