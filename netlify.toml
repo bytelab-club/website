@@ -9,3 +9,9 @@
   to = "https://hackclub.com/workshops/personal_website"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/dodge"
+  to = "https://hackclub.com/workshops/dodge"
+  status = 302
+  force = true
