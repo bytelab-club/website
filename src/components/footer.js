@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './footer.module.css'
 
 function Icon(props){
   return <a href={props.to} style={{
@@ -13,34 +14,12 @@ function Icon(props){
 export default class Footer extends React.Component {
   render() {
     return (
-      <div style={{
-        backgroundColor: "#414141",
-        color: "#ebebeb",
-        height: "6rem",
-        display: "flex",
-        flexDirection: "rows",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "0 3rem 0 3rem"
-      }}>
-        <small style={{
-          padding: "1rem",
-          fontSize: "1rem",
-          lineHeight: "1.6rem"
-        }}>
-          Created by Alex Ruiz.<br />
+      <div className={styles.footer}>
+        <small>
+          Created by <a style={{color: "#ebebeb"}} href="https://ruizalex.com">Alex Ruiz</a>.<br />
           Thanks to Crystal Yao for helping me pick colors.
         </small>
-        <div style={{
-          padding: "1rem",
-          display: "flex",
-          width: "14rem",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          marginRight: "1rem",
-          alignItems: "center",
-          height: "fit-content"
-        }}>
+        <div>
           <Icon name="logo-github" to="https://github.com/bytelab-club" />
           <Icon name="logo-slack" to="https://bytelab.club/slack" />
           <Icon name="logo-instagram" to="https://instagram.com/bytelaboratory" />

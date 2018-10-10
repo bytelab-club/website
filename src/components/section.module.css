@@ -17,5 +17,19 @@
 .container {
   max-width: 70rem;
   margin: auto;
-  padding: 5rem;
+  padding: 5vw;
+}
+@media (max-width: 755px){
+  .section {
+    padding-top: 2rem;
+  }
+  .container {
+    padding-top: 2rem;
+  }
+  .title {
+    width: 100%;
+    font-size: 12vw;
+    text-align: center;
+    padding: 1rem 0;
+  }
 }

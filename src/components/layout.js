@@ -34,11 +34,12 @@ const Layout = ({ children, data, props }) => (
     <div
       style={{
         margin: '0',
+        minHeight: "100vh"
       }}
     >
       {children}
-      <Footer />
     </div>
+    <Footer />
   </div>
 )
 

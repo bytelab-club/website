@@ -18,7 +18,7 @@ class CommunitySection extends React.Component {
   render() {
     return (
       <Section name="our community">
-        <div className="flex">
+        <div className="community flex">
           <StaticQuery query={
             graphql`
               query CommunityImage {

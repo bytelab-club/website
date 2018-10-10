@@ -26,8 +26,8 @@ export default class Front extends React.Component {
           }
           render={ data => (
             <Img fluid={data.file.childImageSharp.fluid}
+              className={styles.frontImage}
               style={{
-                width: "60%",
                 height: "40rem",
                 position: "absolute",
                 left: "0"

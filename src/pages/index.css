@@ -25,6 +25,8 @@
   font-size: 2.3rem;
   display: inline;
 }
+
+/*featured section*/
 .featured {
   height: 80vh;
 }
@@ -34,4 +36,32 @@
 .featured .flex {
   flex-direction: column;
   align-items: flex-start;
+}
+
+/*mobile @media query*/
+@media (max-width: 755px){
+  .community {
+    flex-direction: column;
+  }
+  .image {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .text {
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .button {
+    margin: 2rem auto 2rem auto;
+    width: 20rem;
+    max-width: 80vw;
+  }
+  .button ion-icon {
+    font-size: 6vw;
+  }
+  .button p {
+    font-size: 7.3vw;
+    display: inline;
+  }
 }

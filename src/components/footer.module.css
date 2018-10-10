@@ -1,0 +1,34 @@
+.footer {
+  background-color: #414141;
+  color: #ebebeb;
+  height: 6rem;
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem 0 3rem;
+}
+.footer small {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.footer div {
+  padding: 1rem;
+  display: flex;
+  width: 14rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 1rem;
+  align-items: center;
+  height: fit-content;
+}
+@media (max-width: 755px){
+  small {
+    display: none;
+  }
+  .footer div {
+    margin: auto;
+    width: 20rem;
+  }
+}
