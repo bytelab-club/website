@@ -7,44 +7,42 @@ import Footer from './footer'
 import Navbar from './navbar'
 import './layout.css'
 
-const Layout = ({ children, data, props }) => (
-  <div style={{minHeight: '100vh', position: 'relative'}}>
-    <StaticQuery query={
-      graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
+export default class Layout extends React.Component {
+  render() {
+    return (
+      <div style={{minHeight: '100vh', position: 'relative'}}>
+        <StaticQuery query={
+          graphql`
+            query SiteTitleQuery {
+              site {
+                siteMetadata {
+                  title
+                }
+              }
             }
-          }
+          `
         }
-      `
-    }
-      render={ data => (
-          <Helmet
-            title={data.site.siteMetadata.title}
-            meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
-            ]}
-          />
-        )}
-    />
-    <Navbar/>
-    <div
-      style={{
-        margin: '0',
-        minHeight: "100vh"
-      }}
-    >
-      {children}
-    </div>
-    <Footer />
-  </div>
-)
-
-Layout.propTypes = {
-  children: PropTypes.func,
+          render={ data => (
+              <Helmet
+                title={data.site.siteMetadata.title}
+                meta={[
+                  { name: 'description', content: 'Sample' },
+                  { name: 'keywords', content: 'sample, something' },
+                ]}
+              />
+            )}
+        />
+        <Navbar/>
+        <div
+          style={{
+            margin: '0',
+            minHeight: "100vh"
+          }}
+        >
+          {this.props.children}
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 }
-
-export default Layout
