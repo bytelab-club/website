@@ -29,7 +29,6 @@ module.exports = {
       options: {
         trackingId: 'UA-130498987-1',
         head: true,
-        cookieDomain: "example.com"
       }
     }
   ]

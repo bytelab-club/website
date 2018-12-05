@@ -61,6 +61,7 @@ class CommunitySection extends React.Component {
   }
 }
 
+// eslint-disable-next-line
 class FeaturedBanner extends React.Component {
   render(){
     return (
