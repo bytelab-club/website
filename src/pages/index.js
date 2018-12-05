@@ -7,12 +7,14 @@ import {graphql, StaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
 import './index.css'
 
-const IndexPage = ({data}) => (
-  <Layout>
-    <Front />
-    <CommunitySection />
-  </Layout>
-)
+const IndexPage = (props) => {
+  return (
+    <Layout>
+      <Front />
+      <CommunitySection />
+    </Layout>
+  );
+}
 
 class CommunitySection extends React.Component {
   render() {
@@ -25,11 +27,7 @@ class CommunitySection extends React.Component {
                 file(relativePath: {eq: "community.jpg"}) {
                   childImageSharp {
                     fluid{
-                      base64
-                      aspectRatio
-                      src
-                      srcSet
-                      sizes
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
@@ -66,27 +64,10 @@ class FeaturedBanner extends React.Component {
   render(){
     return (
       <div className="featured">
-        {/* <StaticQuery query={
-          graphql`
-           query FeaturedImage {
-             file(relativePath: {eq: "featured.png"}) {
-               childImageSharp {
-                 fluid {
-                   base64
-                   aspectRatio
-                   srcSet
-                   src
-                   sizes
-                 }
-               }
-             }
-           }
-          `
-          } render={} /> */}
-          <div className="flex">
-            <h3>You can do anything.</h3>
-            <p>See what Lowell's creators are up to.</p>
-          </div>
+        <div className="flex">
+          <h3>You can do anything.</h3>
+          <p>See what Lowell's creators are up to.</p>
+        </div>
       </div>
     )
   }

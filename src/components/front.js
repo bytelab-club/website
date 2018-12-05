@@ -14,11 +14,7 @@ export default class Front extends React.Component {
               file(relativePath: {eq: "background.png"}) {
                 childImageSharp {
                   fluid{
-                    base64
-                    aspectRatio
-                    src
-                    srcSet
-                    sizes
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
